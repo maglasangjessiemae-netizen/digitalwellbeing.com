@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A webpage about digital well-being and responsible technology use.">
+
+    <title>Digital Well-being and Responsible Technology Use</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1565c0, #42a5f5);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        nav {
+            background-color: #0d47a1;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bbdefb;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 35px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #1565c0;
+            border-left: 5px solid #42a5f5;
+            padding-left: 12px;
+        }
+
+        h3 {
+            color: #0d47a1;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            flex: 1 1 280px;
+            padding: 25px;
+            background-color: #e3f2fd;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .tips {
+            background-color: #e8f5e9;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .warning {
+            background-color: #fff3e0;
+            padding: 20px;
+            border-left: 5px solid #ff9800;
+            border-radius: 8px;
+        }
+
+        .quote {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #1565c0;
+            padding: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #1565c0;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #0d47a1;
+        }
+
+        footer {
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #bbdefb;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            section {
+                margin: 20px 10px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="home">
+        <h1>Digital Well-being</h1>
+        <p>
+            Using Technology Wisely, Safely, and Responsibly
+        </p>
+
+        <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+            alt="Person using a laptop">
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#screen">Screen Time</a>
+        <a href="#safety">Online Safety</a>
+        <a href="#social">Social Media</a>
+        <a href="#tips">Tips</a>
+        <a href="#references">References</a>
+    </nav>
+
+    <!-- INTRODUCTION -->
+    <section id="about">
+        <h2>What is Digital Well-being?</h2>
+
+        <p>
+            Digital well-being means using technology in a healthy,
+            balanced, and responsible way. It involves understanding
+            how our digital habits affect our physical health, emotions,
+            relationships, learning, and everyday life.
+        </p>
+
+        <p>
+            Technology can help us learn, communicate, create, and
+            accomplish many things. However, using technology without
+            balance can affect our focus, sleep, relationships, and
+            overall well-being.
+        </p>
+
+        <div class="quote">
+            "Technology should improve our lives, not control them."
+        </div>
+    </section>
+
+    <!-- SCREEN TIME -->
+    <section id="screen">
+        <h2>Healthy Screen Time</h2>
+
+        <p>
+            Screens are useful for studying, communicating, entertainment,
+            and creativity. The important thing is to use them intentionally
+            and make time for activities away from screens.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Take Breaks</h3>
+                <p>
+                    Take regular breaks when using computers, phones,
+                    or other digital devices for long periods.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Get Enough Sleep</h3>
+                <p>
+                    Avoid using devices when it is time to sleep and
+                    give yourself time to rest.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Stay Active</h3>
+                <p>
+                    Balance screen activities with physical activities,
+                    hobbies, and time with family and friends.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ONLINE SAFETY -->
+    <section id="safety">
+        <h2>Online Safety</h2>
+
+        <p>
+            Being responsible online also means protecting yourself and
+            respecting other people. We should think carefully before
+            sharing information or interacting with people online.
+        </p>
+
+        <div class="warning">
+            <strong>Remember:</strong>
+            Never share sensitive personal information with strangers
+            online. Be careful with suspicious links, messages, and
+            websites.
+        </div>
+
+        <h3>Important Online Safety Practices</h3>
+
+        <ul>
+            <li>Use strong and unique passwords.</li>
+            <li>Keep personal information private.</li>
+            <li>Check information before sharing it.</li>
+            <li>Do not click suspicious links.</li>
+            <li>Use privacy and security settings.</li>
+            <li>Report harmful or inappropriate online behavior.</li>
+            <li>Ask a trusted adult for help when something online feels unsafe.</li>
+        </ul>
+
+        <p>
+            UNICEF Philippines also recommends being aware of online risks
+            such as cyberbullying, scams, misinformation, and other harmful
+            content.
+        </p>
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+    <section id="social">
+        <h2>Responsible Social Media Use</h2>
+
+        <p>
+            Social media allows people to communicate, share ideas,
+            and express themselves. However, responsible users should
+            think about the possible effects of their posts and comments.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Think Before You Post</h3>
+                <p>
+                    Ask yourself if your post is true, respectful,
+                    appropriate, and necessary.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Respect Others</h3>
+                <p>
+                    Avoid insulting, embarrassing, or spreading harmful
+                    information about other people.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Check Information</h3>
+                <p>
+                    Do not immediately believe or share information.
+                    Check reliable sources first.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EFFECTS -->
+    <section>
+        <h2>Effects of Excessive Technology Use</h2>
+
+        <p>
+            Technology can be beneficial, but too much or poorly balanced
+            use can interfere with important parts of everyday life.
+        </p>
+
+        <ul>
+            <li>Difficulty concentrating on schoolwork</li>
+            <li>Less time for physical activities</li>
+            <li>Interrupted sleep or poor sleep habits</li>
+            <li>Less face-to-face interaction</li>
+            <li>Distraction from important responsibilities</li>
+            <li>Exposure to harmful or misleading online content</li>
+        </ul>
+    </section>
+
+    <!-- TIPS -->
+    <section id="tips">
+        <h2>Tips for Better Digital Well-being</h2>
+
+        <div class="tips">
+
+            <h3>Try These Habits:</h3>
+
+            <ul>
+                <li>Set reasonable limits for recreational screen use.</li>
+                <li>Take breaks from your devices.</li>
+                <li>Keep your phone away while studying.</li>
+                <li>Have screen-free time with family and friends.</li>
+                <li>Choose useful and educational content.</li>
+                <li>Protect your privacy and personal information.</li>
+                <li>Think before posting or commenting.</li>
+                <li>Balance online activities with sleep, exercise, hobbies, and real-life relationships.</li>
+            </ul>
+
+        </div>
+
+        <p>
+            UNICEF's digital responsibility materials emphasize being
+            conscious of digital habits, setting time limits, taking breaks,
+            and using technology intentionally.
+        </p>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section>
+        <h2>Our Call to Action</h2>
+
+        <div class="quote">
+            Use Technology Wisely. <br>
+            Stay Safe. Stay Balanced. Stay Responsible.
+        </div>
+
+        <p>
+            Technology is a powerful tool. Instead of allowing technology
+            to control our time and attention, we can choose how we use it.
+            Small responsible habits can help us create a healthier and
+            safer digital life.
+        </p>
+
+        <a href="#home" class="button">Back to Top</a>
+    </section>
+
+    <!-- REFERENCES -->
+    <section id="references">
+        <h2>References</h2>
+
+        <p>
+            UNICEF Philippines. "DigiChamps: A Module Set on Instilling
+            Digital Responsibility to Children."
+        </p>
+
+        <p>
+            UNICEF Philippines. "Ingat sa paggamit ng internet!"
+        </p>
+
+        <p>
+            UNICEF. "Digital Education and AI Strategy 2025–2030."
+        </p>
+
+        <p>
+            World Health Organization. "Why digital environments matter
+            for mental health."
+        </p>
+
+        <p>
+            For more reliable information, visit:
+        </p>
+
+        <ul>
+            <li>
+                <a href="https://www.unicef.org/philippines/" target="_blank">
+                    UNICEF Philippines
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.unicef.org/digitaleducation/" target="_blank">
+                    UNICEF Digital Education
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.who.int/" target="_blank">
+                    World Health Organization
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Digital Well-being and Responsible Technology Use</h3>
+
+        <p>
+            Created by: <strong>Group-4</strong>
+        </p>
+
+        <p>
+            Group Members:
+            MAGLASANG
+            VAÑO
+            BALONGKIT
+            LOFRANCO
+            MONDIDO
+            PILAPIL
+            ARCIPE
+        </p>
+
+        <p>
+            Grade 12 ABM-3
+        </p>
+
+        <p>
+            © 2026 School Project
+        </p>
+    </footer>
+
+</body>
+</html>
